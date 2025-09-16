@@ -1,0 +1,33 @@
+# Data Science Mission Requirements File
+# Python version: 3.11
+
+# File utils
+markitdown
+openpyxl
+
+# Libraries required for web requests and data processing
+tqdm
+requests
+pandas
+numpy
+streamlit
+
+# LLM
+openai
+python-dotenv
+langchain
+langchain-openai
+langchain-openrouter
+langchain-anthropic
+langchain_community
+
+# Libraries required for data visualization
+plotly
+streamlit-plotly-events
+pyvis
+
+# REST API
+fastapi
+uvicorn
+pydantic
+

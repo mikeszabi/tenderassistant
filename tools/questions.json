@@ -1,0 +1,45 @@
+[
+  {
+    "id": "full_name",
+    "var": "full_name",
+    "text": "Kezdjük a neveddel. Hogy hívnak?",
+    "required": true,
+    "type": "string",
+    "validators": [{"regex": "^.{2,}$", "message": "Legalább 2 karakter legyen."}]
+  },
+  {
+    "id": "email",
+    "var": "email",
+    "text": "Mi az email címed?",
+    "required": true,
+    "type": "email"
+  },
+  {
+    "id": "start_date",
+    "var": "start_date",
+    "text": "Mikor kezdenéd? (pl. 2025-09-30 vagy 'jövő hét kedd')",
+    "required": true,
+    "type": "date"
+  },
+  {
+    "id": "role",
+    "var": "role",
+    "text": "Milyen szerepkör érdekel? (fejlesztő|data|pm)",
+    "required": true,
+    "type": "select",
+    "options": ["fejlesztő","data","pm"]
+  },
+  {
+    "id": "skills",
+    "var": "skills",
+    "text": "Sorold a főbb technológiákat/tapasztalatot, szabadon.",
+    "required": false,
+    "type": "string",
+    "followups": [
+      {
+        "when": {"role": "fejlesztő"},
+        "ask": "Fejlesztőként mely nyelvekben vagy otthon? (pl. Python, JS, Java)"
+      }
+    ]
+  }
+]
